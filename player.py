@@ -39,7 +39,7 @@ class HumanPlayer(Player):
                 value = int(spot) 
                 
                 if value not in next.available_spots():
-                    return ValueError
+                    raise ValueError
                 
                 valid_spot = True ## success                                                        
                 
